@@ -78,10 +78,10 @@ With dependencies installed and our project folder ready for us to start coding,
 
    <!-- eslint-skip -->
    ```js
-   import { resolve } from 'path'
+   const path = require('path')
 
    export default {
-     root: resolve(__dirname, 'src'),
+     root: path.resolve(__dirname, 'src'),
      build: {
        outDir: '../dist'
      },
